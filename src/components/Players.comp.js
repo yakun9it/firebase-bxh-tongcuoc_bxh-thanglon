@@ -35,10 +35,10 @@ const Players = () => {
                     <FormControl className="bxh-select-week-mobile" variant="standard" sx={{ m: 1, minWidth: 180 }}>
                         <InputLabel id="bxh-select-week-label-mobile">Tuần</InputLabel>
                         <Select labelId="bxh-select-week-label-mobile" id="bxh-select-week-select-mobile" value={weekSelect} onChange={handleChangeWeek} label="Tuần">
-                            <MenuItem value={week_now}>Tuần {week_now} từ ({moment().startOf('isoweek').format('DD/MM/YYYY') + "-" + moment().endOf('isoweek').format('DD/MM/YYYY')})</MenuItem>
-                            <MenuItem value={week_now - 1}>Tuần {week_now - 1} từ ({moment().subtract(1, 'week').startOf('isoweek').format('DD/MM/YYYY') + "-" + moment().subtract(1, 'week').endOf('isoweek').format('DD/MM/YYYY')})</MenuItem>
-                            <MenuItem value={week_now - 2}>Tuần {week_now - 2} từ ({moment().subtract(2, 'week').startOf('isoweek').format('DD/MM/YYYY') + "-" + moment().subtract(2, 'week').endOf('isoweek').format('DD/MM/YYYY')})</MenuItem>
-                            <MenuItem value={week_now - 3}>Tuần {week_now - 3} từ ({moment().subtract(3, 'week').startOf('isoweek').format('DD/MM/YYYY') + "-" + moment().subtract(3, 'week').endOf('isoweek').format('DD/MM/YYYY')})</MenuItem>
+                            <MenuItem value={week_now}>Tuần {week_now}(Từ {moment().startOf('isoweek').format('DD/MM') + "-" + moment().endOf('isoweek').format('DD/MM')})</MenuItem>
+                            <MenuItem value={week_now - 1}>Tuần {week_now - 1}(Từ {moment().subtract(1, 'week').startOf('isoweek').format('DD/MM') + "-" + moment().subtract(1, 'week').endOf('isoweek').format('DD/MM')})</MenuItem>
+                            <MenuItem value={week_now - 2}>Tuần {week_now - 2}(Từ {moment().subtract(2, 'week').startOf('isoweek').format('DD/MM') + "-" + moment().subtract(2, 'week').endOf('isoweek').format('DD/MM')})</MenuItem>
+                            <MenuItem value={week_now - 3}>Tuần {week_now - 3}(Từ {moment().subtract(3, 'week').startOf('isoweek').format('DD/MM') + "-" + moment().subtract(3, 'week').endOf('isoweek').format('DD/MM')})</MenuItem>
                         </Select>
                     </FormControl>
                     <Box className="bxh-box-tablist" sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -49,10 +49,10 @@ const Players = () => {
                         <FormControl className="bxh-select-week" variant="standard" sx={{ m: 1, minWidth: 120 }}>
                             <InputLabel id="bxh-select-week-label">Tuần</InputLabel>
                             <Select labelId="bxh-select-week-label" id="bxh-select-week-select" value={weekSelect} onChange={handleChangeWeek} label="Tuần">
-                                <MenuItem value={week_now}>Tuần {week_now} từ ({moment().startOf('isoweek').format('DD/MM/YYYY') + "-" + moment().endOf('isoweek').format('DD/MM/YYYY')})</MenuItem>
-                                <MenuItem value={week_now - 1}>Tuần {week_now - 1} từ ({moment().subtract(1, 'week').startOf('isoweek').format('DD/MM/YYYY') + "-" + moment().subtract(1, 'week').endOf('isoweek').format('DD/MM/YYYY')})</MenuItem>
-                                <MenuItem value={week_now - 2}>Tuần {week_now - 2} từ ({moment().subtract(2, 'week').startOf('isoweek').format('DD/MM/YYYY') + "-" + moment().subtract(2, 'week').endOf('isoweek').format('DD/MM/YYYY')})</MenuItem>
-                                <MenuItem value={week_now - 3}>Tuần {week_now - 3} từ ({moment().subtract(3, 'week').startOf('isoweek').format('DD/MM/YYYY') + "-" + moment().subtract(3, 'week').endOf('isoweek').format('DD/MM/YYYY')})</MenuItem>
+                                <MenuItem value={week_now}>Tuần {week_now}(Từ {moment().startOf('isoweek').format('DD/MM') + "-" + moment().endOf('isoweek').format('DD/MM')})</MenuItem>
+                                <MenuItem value={week_now - 1}>Tuần {week_now - 1}(Từ {moment().subtract(1, 'week').startOf('isoweek').format('DD/MM') + "-" + moment().subtract(1, 'week').endOf('isoweek').format('DD/MM')})</MenuItem>
+                                <MenuItem value={week_now - 2}>Tuần {week_now - 2}(Từ {moment().subtract(2, 'week').startOf('isoweek').format('DD/MM') + "-" + moment().subtract(2, 'week').endOf('isoweek').format('DD/MM')})</MenuItem>
+                                <MenuItem value={week_now - 3}>Tuần {week_now - 3}(Từ {moment().subtract(3, 'week').startOf('isoweek').format('DD/MM') + "-" + moment().subtract(3, 'week').endOf('isoweek').format('DD/MM')})</MenuItem>
                             </Select>
                         </FormControl>
                     </Box>
