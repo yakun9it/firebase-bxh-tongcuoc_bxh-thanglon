@@ -1,5 +1,5 @@
 import Players from "../components/Players.comp"
-import img_logo from '../assets/images/logo-bxh.png';
+import img_logo from '../assets/images/logo - slogan.png';
 import img_title from '../assets/images/title-bxh-2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from "@fortawesome/fontawesome-svg-core";
