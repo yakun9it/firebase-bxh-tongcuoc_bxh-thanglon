@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -48,7 +50,7 @@ body {
 }
 
 .bxh-title {
-    width: 250px;
+    width: 400px;
     height: auto;
     margin: auto;
 }
@@ -207,11 +209,43 @@ div:has(> #bxh-select-week-select)::before {
     display: none !important;
 }
 
+.no-data {
+    padding: 10px;
+}
+
+.bxh-form-find-name {
+    top: 50px;
+    position: relative;
+
+}
+
+@media only screen and (min-width: 1180px) {
+    .bxh-form-find-name {
+        border: none !important;
+    }
+}
 
 /* ======================================================================== */
 /* ========================= css mobile screen ============================ */
 /* ======================================================================== */
+@media only screen and (max-width: 1180px) {
+    .bxh-form-find-name {
+        top: -10px;
+        position: relative;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+    }
+}
+
+
+
 @media only screen and (max-width: 900px) {
+    .bxh-form-find-name {
+        top: 0;
+        position: relative;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+
+    }
+
     .bxh-container {
         width: 100%;
     }
