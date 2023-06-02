@@ -18,6 +18,29 @@ body {
     background-attachment: fixed;
 }
 
+ul.bxh-pagination {
+    display: flex;
+    list-style: none;
+}
+
+.bxh-paging-li {
+    display: block;
+    padding: 1px;
+}
+
+.bxh-paging-li.active {
+    background-color: #9bbfc9;
+}
+
+.bxh-paging-button {
+    display: block;
+    padding: 10px;
+    background-color: unset;
+    /* border-radius: 5px; */
+    border: 1px solid #ffffff;
+    color: #fff;
+}
+
 #root {
     height: 100%;
 }
