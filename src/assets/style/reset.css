@@ -87,6 +87,7 @@ body {
     color: #fff;
     display: flex;
     cursor: pointer;
+    margin: auto 0;
 }
 
 .bxh-icon-home>svg {
